@@ -1,24 +1,15 @@
+import React from "react"; // 이거 왜 넣으라고 했더라
 import logo from './logo.svg';
+import SearchInput from "./component/SearchInput"
+import SearchResult from "./component/SearchResult"
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SearchInput />
+      <SearchResult />
+    </>
   );
 }
 
